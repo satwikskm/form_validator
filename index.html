@@ -12,49 +12,79 @@
     <div class="container">
       <h2>Connect with us</h2>
       <form action="#" class="form" id="form">
+        <div class="row">
+          <div class="form-control ">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter Username"
+            />
+            <small id="username">Username is Required</small>
+          </div>
+  
+          <div class="form-control ">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter Email Address"
+            />
+            <small>Email is Required</small>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password"
+            />
+            <small>Password is Required</small>
+          </div>
+  
+          <div class="form-control">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder="Confirm Password"
+            />
+            <small>Conform Password is Required</small>
+          </div>
+
+        </div>
+        <!-- <div class="row"> -->
+          <div class="form-control">
+            <label for="phone-number">Phone Number</label>
+            <input
+              type="phone-number"
+              name="phone-number"
+              id="phone-number"
+              placeholder="Phone Number"
+            />
+            <small>Phone Number is Required</small>
+          <!-- </div> -->
+
+        </div>
         <div class="form-control">
-          <label for="username">Username</label>
+          <label for="text-area">Text Area</label>
           <input
             type="text"
-            name="username"
-            id="username"
-            placeholder="Enter Username"
+            name="text-area"
+            id="text-area"
+            placeholder="Text Area"
           />
-          <small>Username is Required</small>
-        </div>
+          <small id="char">Text Area is Required</small>
+        
 
-        <div class="form-control">
-          <label for="email">Email</label>
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="Enter Email Address"
-          />
-          <small>Email is Required</small>
-        </div>
-
-        <div class="form-control">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Enter Password"
-          />
-          <small>Password is Required</small>
-        </div>
-
-        <div class="form-control">
-          <label for="confirm-password">Confirm Password</label>
-          <input
-            type="password"
-            name="confirm-password"
-            id="confirm-password"
-            placeholder="Confirm Password"
-          />
-          <small>Conform Password is Required</small>
-        </div>
+        
 
         <button type="submit">Submit</button>
       </form>

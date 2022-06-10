@@ -3,6 +3,36 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirm-password');
+const textArea = document.getElementById('text-area');
+const maxLength = 20
+document.getElementById('char').style.transform="translate(0,-80px)"
+
+textArea.addEventListener('keyup',()=>{
+  document.getElementById('char').style.visibility="visible"
+  
+    
+    if(textArea.value.length == maxLength){
+      document.getElementById('char').style.color="red"
+      document.getElementById('char').innerText="Max limit reaached"
+      textArea.setAttribute="disabled"
+
+    }
+    else{
+      document.getElementById('char').style.color="green"
+      textArea.value.length
+      document.getElementById('char').innerText=textArea.value.length
+      if(textArea.value.length > maxLength/2){
+        document.getElementById('char').style.color="orange"
+        
+  
+      }
+      else if(textArea.value.length > maxLength-10){
+        document.getElementById('char').style.color="red"
+      }
+
+    }
+})
+
 
 //Input Array
 
@@ -14,6 +44,7 @@ const showError = function (input, message) {
   const formControl = input.parentElement;
   formControl.className = 'form-control error';
   const small = formControl.querySelector('small');
+  
   small.innerText = message;
 };
 
